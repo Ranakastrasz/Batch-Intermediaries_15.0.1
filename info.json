@@ -1,0 +1,14 @@
+
+{
+  "name": "Batch-Intermediaries",
+  "version": "15.0.1",
+  "title": "Batch Intermediaries",
+  "author": "Ranakastrasz",
+  "contact": "~",
+  "homepage": "..",
+  "description": "Intermediate recipes are slower, use more resources, and produce more resources.",
+  "dependencies": ["base"],
+  "factorio_version": "0.15"
+}
+
+
