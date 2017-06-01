@@ -7,7 +7,7 @@
   "contact": "~",
   "homepage": "..",
   "description": "Intermediate recipes are slower, use more resources, and produce more resources.",
-  "dependencies": ["base"],
+  "dependencies": ["base", "? quarry"],
   "factorio_version": "0.15"
 }
 

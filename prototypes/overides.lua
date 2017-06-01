@@ -1,6 +1,6 @@
 --require("config")
 
-local multiplier = 20
+local multiplier = 5
 local timeCap = 600;
 
 
@@ -67,7 +67,7 @@ local item_whitelist =
 local item_blacklist =
 {
 	"empty-barrel", -- because unbarreling and stack size stuff.
-	"iron_stick", -- because starting pickaxe
+	"iron-stick", -- because starting pickaxe
 	"discharge_defence", -- because you only ever need one per player
 	"atomic-bomb", -- because seriously...
 	
@@ -132,7 +132,7 @@ function modRecipe (recipe)
 	
 	if (recipe.energy_required) then
 		if recipe.energy_required * multiplier > timeCap then
-			mult = math.floor((timeCap/recipe.energy_required)/10)*10
+			mult = (timeCap/recipe.energy_required)--math.floor((timeCap/recipe.energy_required)/10)*10
 		end
 	else
 	
