@@ -125,7 +125,6 @@ function get_item_type_name(name)
   return item_type
 end
 
-
 function modRecipe (recipe)
 
 	local mult = multiplier 
@@ -153,7 +152,14 @@ function modRecipe (recipe)
 			if (result.amount) then
 				result.amount = result.amount * mult
 			else
-				result.amount = mult
+				if (result.amount_min and result.amount_max) then
+					result.amount_min = result.amount_min * mult
+					result.amount_max = result.amount_max * mult
+				
+				else
+				
+					result.amount = mult
+				end
 			end
 		end
 	else
